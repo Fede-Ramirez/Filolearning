@@ -1,0 +1,1265 @@
+/*DISEÑO GENERAL PARA LOS 5 HTML*/
+
+/*Quitar el margen por defecto entre el contenido de cada página web y su respectiva ventana*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Cambiar la tipografía*/
+
+* {
+	font-family:"roboto",
+	sans-serif; 
+}
+
+/*Aplicar grids en un formato general*/
+
+.contenedor__padre{
+	display: grid;
+	grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+header{
+	grid-area: header;
+}
+
+main{
+	grid-area: main;
+}
+
+/* NAV */
+
+/*Modificar listas: sacar bullets y ponerlas en vertical*/
+
+li{
+	list-style-type: none; /*Eliminar subrayado*/; 
+	margin: 10px;
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+li:hover{
+	background-color: lightsalmon;
+}
+
+/*Modificar anchors o enlaces*/
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover{
+	color: white;
+}
+
+/*Agregar colores, tipografía, etc. y configurar los textos*/
+
+.nav__item{
+	display: inline;
+}
+
+.nav__anchor{
+	color: lightslategrey;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*MAIN*/
+
+h1{
+	font-family: "libre baskerville", serif;
+	font-weight: bold;
+	font-size: 50px;
+	margin: 0px 20px 20px 20px;
+}
+
+.centrar{
+	text-align: center;
+}
+
+.mainTexto{
+	margin: 20px;
+	font-size: 18px;
+}
+
+h4{
+	font-weight: bold;
+	font-size: 17px;
+}
+
+/*FOOTER*/
+
+.contacto{
+	grid-area: contacto;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+	grid-area: redes;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.redes__facebook{
+	padding: 0px 15px 0px 15px;
+}
+
+.redes__instagram{
+	padding: 0px 15px 0px 15px;
+}
+
+.redes__linkedin{
+	padding: 0px 15px 0px 15px;
+}
+
+.mailLogo{}
+
+/*LOGO, NAV Y FOOTER*/
+
+.logo__filolearning{
+	grid-area: logo__filolearning;
+	display: flex;
+	flex-direction: column;
+}
+
+.tipografiaLogo{
+	font-family: "cormorant upright", Serif;
+	font-weight: bold;
+	font-size: 40px;
+	font-style: italic;
+	color: black;
+}
+
+.logo__anchor{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+/*DISEÑO INDEX*/
+
+.main{
+	background-color: #f2f2f2;
+	display: grid;
+	grid-template-areas: 
+    "main__section1"
+    "main__section2"
+    "main__section3";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+.main__section2{
+	grid-area: main__section2;
+	margin-bottom: 75px;
+}
+
+.section2__texto{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 100px 0px 100px 0px;
+}
+
+.section2__pregunta{
+	text-align: center;
+	font-family: "libre baskerville", serif;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 0px 0px 50px 0px;
+}
+
+.economico{
+	grid-area: economico;
+}
+
+.seguimiento{
+	grid-area: seguimiento;
+}
+
+.flexibilidad{
+	grid-area: flexibilidad;
+}
+
+.adaptabilidad{
+	grid-area: adaptabilidad;
+}
+
+.main__section3{
+	background-image: url("../assets/img/cuaderno.jpg");
+	width: 100%;
+	height: 700px;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-area: main__section3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*DISEÑO ACERCA DE MÍ*/
+
+.mainFondo{
+	background-color:#FDFCE5;
+}
+
+.mainPadre{
+	background-color:#FDFCE5;
+	display: grid;
+	grid-template-areas:
+	"main__presentacion"
+	"main__apartados1"
+	"main__apartados2"
+	"main__apartados3"
+	"main__frase";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(5, auto); 
+}
+
+.main__presentacion{
+	grid-area: main__presentacion;
+	display: flex;
+	flex-direction:column;
+	justify-items: center;
+	align-items: center;
+}
+
+.main__apartados1{
+	margin: 20px 0px 20px 0px;
+	grid-area: main__apartados1;
+}
+
+.main__apartados2{
+	margin: 20px 0px 20px 0px;
+    grid-area: main__apartados2;
+}
+
+.main__apartados3{
+	margin: 20px 0px 20px 0px;
+	grid-area: main__apartados3;
+}
+
+.edicionParrafos{
+	padding: 10px 0px 0px 0px;
+	margin: 0px 20px 0px 20px;
+	line-height: 1.6;
+	font-size: 18px;
+	text-align: justify;
+	grid-area: edicionParrafos;
+}
+
+.main__frase{
+	margin: 100px 0px 0px 0px;
+	background-color: #F7F7F7;
+	grid-area: main__frase;
+}
+
+.edicionFrase{
+	text-align: center;
+	font-size: 20px;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px 0px 2px 0px;
+}
+
+/*DISEÑO SERVICIOS*/
+
+.main__titulo{
+	grid-area: main__titulo;
+}
+
+.main__presencialindiv{
+	grid-area: main__presencialindiv;
+}
+
+.presencialindiv__img{
+	grid-area: presencialindiv__img;
+}
+
+.main__presencialgrup{
+	grid-area: main__presencialgrup;
+}
+
+.presencialgrup__img{
+	grid-area: presencialgrup__img;
+}
+
+.presencialdom__img{
+	grid-area: presencialdom__img;
+}
+
+.main__onlineindiv{
+	grid-area: main__onlineindiv;
+}
+
+.onlineindiv__img{
+	grid-area: onlineindiv__img;
+}
+
+.main__onlinegrup{
+	grid-area: main__onlinegrup;
+}
+
+.onlinegrup__img{
+	grid-area: onlinegrup__img;
+}
+
+.main__frase{
+	grid-area: main__frase;
+}
+
+.presencialdom__encabezado{
+	grid-area: presencialdom__encabezado;
+}
+
+.presencialdom__parrafo{
+	grid-area: presencialdom__parrafo;
+}
+
+.edicionMapas{
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	width: 100%;
+	height: 150px;
+	margin: 10px 0px 10px 0px;
+}
+
+.main__pagos{
+	margin: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.pagos__encabezado{
+	text-align: center;
+	font-family: "libre baskerville", serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 75px 75px 0px 75px;
+}
+
+/*DISEÑO ASIGNATURAS*/
+
+.asignaturas__encabezado{
+	grid-area: asignaturas__encabezado;
+}
+
+.main__oracion{
+	margin: 15px 0px 15px 0px;
+	grid-area: main__oracion;
+}
+
+.matematica__encabezado{
+	grid-area: matematica__encabezado;
+}
+
+.matematica__primaria{
+	grid-area: matematica__primaria;
+}
+
+.matematica__secundaria{
+	grid-area: matematica__secundaria;
+}
+
+.matematica__preuniversitaria{
+	grid-area: matematica__preuniversitaria;
+}
+
+.analisis__matematico{
+	grid-area: analisis__matematico;
+}
+
+.algebra{
+	grid-area: algebra;
+}
+
+.lengua__encabezado{
+	grid-area: lengua__encabezado;
+}
+
+.lengua__primaria{
+	grid-area: lengua__primaria;
+}
+
+.lengua__secundaria{
+	grid-area: lengua__secundaria;
+}
+
+.literatura__secundaria{
+	grid-area: literatura__secundaria;
+}
+
+.naturales__encabezado{
+	grid-area: naturales__encabezado;
+}
+
+.naturales{
+	grid-area: naturales;
+}
+
+.fisicoquimica{
+	grid-area: fisicoquimica;
+}
+
+.quimica{
+	grid-area: quimica;
+}
+
+.fisica{
+	grid-area: fisica;
+}
+
+.sociales__encabezado{
+	grid-area: sociales__encabezado;
+}
+
+.sociales{
+	grid-area: sociales;
+}
+
+.geografia{
+	grid-area: geografia;
+}
+
+.historia{
+	grid-area: historia;
+}
+
+.proyectos{
+	grid-area: proyectos;
+}
+
+.informatica__encabezado{
+	grid-area: informatica__encabezado;
+}
+
+.word{
+	grid-area: word;
+}
+
+.excel{
+	grid-area: excel;
+}
+
+.power{
+	grid-area: power;
+}
+
+.ingles{
+	grid-area: ingles;
+}
+
+.main__encabezados{
+	text-align: center;
+	font-family: "libre baskerville", serif;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 50px 0px 50px 0px;
+}
+
+.nombreAsignaturas{
+	margin-bottom: 40px; 
+	font-weight: bold;
+	text-align: center;
+}
+
+.imagenesAsignaturas{
+	width: 275px;
+	height: 185px;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.nombreNaturales{
+	margin-left: 8px;
+}
+
+.nombreCsnaturales{
+	margin-left: 115px;
+}
+
+.imagenProyectos{
+	align-self: center;
+	margin: 0px 18px 0px 18px;
+}
+
+/*DISEÑO CONTACTO*/
+
+.mainPapa{
+	background-color: #FDFCE5;
+	display: grid;
+	grid-template-areas: 
+	"contacto__encabezado"
+	"texto"
+	"formulario";
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+}
+
+form{
+	margin: 20px 20px 0px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.contacto__encabezado{
+	grid-area: contacto__encabezado;
+}
+
+.texto{
+	grid-area: texto;
+}
+
+.nombre{
+	grid-area: nombre;
+}
+
+.apellido{
+	grid
+}
+
+.correo{
+	grid-area: correo;
+}
+
+.asunto{
+	grid-area: asunto;
+}
+
+.servicio{
+	grid-area: servicio;
+}
+
+.mensaje{
+	grid-area: mensaje;
+}
+
+.terminos{
+	grid-area: terminos;
+}
+
+.botones{
+	grid-area: botones;
+}
+
+.boton{
+	border: 0px;
+	background-color: coral;
+	padding: 5px;
+	border-radius: 2px;
+	color: ghostwhite;
+	margin-top: 1rem;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+/*MEDIA QUERIE MOBILE*/
+
+@media only screen and (max-width: 768px){
+   nav{
+	background-color:#ffffcc;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.logo{
+	margin-left: 50px;
+}
+
+footer{
+	background-color:#ffffcc;
+	grid-area: footer;
+	display: grid;
+	grid-template-areas:
+	"contacto" 
+	"redes"
+	"logo__filolearning"
+	"copyright";
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto auto;
+}
+
+.contacto__texto{
+	font-size: 15px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.contacto__mail{
+	font-size: 15px;
+	display: flex;
+	flex-direction: row;
+}
+
+.mailDireccion{
+	margin: 5px 0px 5px 0px;
+	padding: 5px;
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+}
+
+.contacto__whatsapp{
+	display: flex;
+	flex-direction: row;
+}
+
+.whatsappLogo{
+	width: 32px;
+	height: 36px;
+}
+
+.whatsapp{
+	margin: 5px 0px 5px 0px;
+	padding: 5px;
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+}
+
+.redes__texto{
+	font-size: 15px;
+	text-align: right;
+	margin: 15px 10px 15px  0px;
+}
+
+.copyright{
+	grid-area: copyright;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.copyright__texto{
+	font-size: 12px;
+	text-transform: capitalize;
+	margin-left: 25px;
+}
+
+.iconos__edicion{
+	margin: 0px;
+	width: 100px;
+	height: 100px;
+}
+
+.icono__palabra{
+	margin-bottom: 50px;
+}
+
+.icono__texto{
+	display: none;
+}
+
+/*INDEX*/
+
+.main__section1{
+	background-image:url("../assets/img/foco_idea.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom:;
+	width: 100%;
+	height: 600px;
+	grid-area: main__section1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.section1__h1{
+	color: beige;
+	font-size: 40px;
+	margin: 30px 0px 0px 0px;
+	text-shadow: 1px 2px 1px ghostwhite;
+}
+
+.section2__iconos{
+	display: grid;
+	grid-template-areas:
+	"economico seguimiento"
+	"flexibilidad adaptabilidad";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto;
+	justify-items: center; 
+}
+
+.section3__frase{
+	color: snow;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 50px ;
+	text-shadow: 1px 2px 1px black;
+}
+
+/*ACERCA DE MÍ*/
+
+.edicionEncabezados{
+	padding: 0px 0px 10px 0px;
+	margin-top: 20px;
+	color: #2e2e1f;
+	font-family: "libre baskerville", serif;
+	text-align: center;
+}
+
+.main__imagen{
+	border-style: solid;
+	border-width: 5px;
+	border-color: lightslategray;
+	width: 250px;
+	height: 250px;
+}
+
+/*SERVICIOS*/
+
+.main__papa{
+	background-color:#FDFCE5;
+	display: grid;
+	grid-template-areas:
+	"main__titulo"
+	"main__presencialindiv" 
+	"presencialindiv__img"
+    "main__presencialgrup"
+	"presencialgrup__img" 
+	"main__presencialdom" 
+	"presencialdom__img"
+	"main__onlineindiv"
+	"onlineindiv__img" 
+	"main__onlinegrup" 
+	"onlinegrup__img"
+	"main__metodos"
+	"main__pagos"
+	"main__frase";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(14, auto);
+}
+
+.main__presencialdom{
+	grid-area: main__presencialdom;
+	display: grid;
+	grid-template-areas: 
+	"presencialdom__encabezado"
+	"presencialdom__parrafo"
+	"presencialdom__partidos"
+	"presencialdom__iframes";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(4, auto);
+}
+
+.main__metodos{
+	grid-area: main__metodos;
+	margin-bottom: 50px;
+}
+
+.main__pagos{
+	grid-area: main__pagos;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.presencialdom__partidos{
+	grid-area: presencialdom__partidos;
+	display: none;
+}
+
+.presencialdom__iframes{
+	grid-area: presencialdom__iframes;
+	display: flex;
+	flex-direction: column;
+}
+
+.edicionImagenes{
+	width: 100%;
+	height: 300px;
+	margin-top: 10px;
+}
+
+.presencialdomImagen{
+	width: 100%;
+	height: 300px;
+	margin-top: 10px;
+}
+
+/*ASIGNATURAS*/
+
+.main__padre{
+	background-color: #FDFCE5;
+	display: grid;
+	grid-template-areas: 
+	"asignaturas__encabezado"
+	"main__oracion"
+	"matematica__encabezado"
+	"main__matematica"
+	"lengua__encabezado"
+	"main__lengua"
+	"naturales__encabezado"
+	"main__naturales"
+	"sociales__encabezado"
+	"main__sociales"
+	"informatica__encabezado"
+	"main__informatica";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(12, auto);
+}
+
+.main__matematica{
+	grid-area: main__matematica;
+	display: grid;
+	grid-template-areas:
+	"matematica__primaria"
+	"matematica__secundaria" 
+	"matematica__preuniversitaria"
+	"analisis__matematico"
+	"algebra";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(5, auto);
+	justify-items: center;
+}
+
+.main__lengua{
+	grid-area: main__lengua;
+	display: grid;
+	grid-template-areas: 
+	"lengua__primaria" 
+	"lengua__secundaria" 
+	"literatura__secundaria";
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+	justify-items: center;
+}
+
+.main__naturales{
+	grid-area: main__naturales;
+	display: grid;
+	grid-template-areas: 
+	"naturales"
+	"fisicoquimica" 
+	"biologia"
+	"quimica" 
+	"fisica";
+	grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);""
+    justify-items: center;
+}
+
+.biologia{
+	grid-area: biologia;
+}
+
+.imagenesNaturales{
+	margin-left: 50px;
+}
+
+.main__sociales{
+	grid-area: main__sociales;
+	display: grid;
+	grid-template-areas: 
+	"sociales" 
+	"geografia" 
+	"historia" 
+	"proyectos";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(4, auto);
+	justify-items: center;
+}
+
+.main__informatica{
+	grid-area: main__informatica;
+	display: grid;
+	grid-template-areas: 
+	"word" 
+	"excel" 
+	"power" 
+	"ingles";
+	grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+}
+
+/*CONTACTO*/
+
+.formulario{
+	grid-area: formulario;
+	display: grid;
+	grid-template-areas: 
+	"nombre"
+	"apellido"
+	"correo"
+	"asunto"
+	"servicio"
+	"mensaje"
+	"terminos"
+	"botones";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(8, auto);
+	justify-items: center;
+}
+
+.form__label{
+	font-weight: bold;
+	text-align: center;
+}
+
+.label__areatexto{
+	margin: 10px;
+	width: 100%;
+	border:  1px solid black;
+	border-radius: 20px;
+}
+}
+
+/*MEDIA QUERIE DESKTOP*/
+
+@media only screen and (min-width: 1024px){
+
+    nav{
+	background-color:#ffffcc;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	margin-left: 15px;
+}
+
+	footer{
+	background-color:#ffffcc;
+	grid-area: footer;
+	display: grid;
+	grid-template-areas:
+	"logo__filolearning contacto redes"
+	"copyright copyright copyright";
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: auto auto;
+}
+
+.contacto{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.contacto__texto{
+	font-size: 20px;
+	text-align: center;
+}
+
+.contacto__mail{
+	font-size: 15px;
+	display: flex;
+	flex-direction: row;
+}
+
+.mailDireccion{
+	margin-top: 5px;
+	padding: 5px;
+	font-size: 17px;
+	font-weight: bold;
+	color: black;
+}
+
+.contacto__whatsapp{
+	position: fixed;
+	bottom: 20px;
+	right: 0;
+}
+
+.whatsapp{
+	display: none;
+}
+
+.redes{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.redes__texto{
+	font-size: 20px;
+	text-align: right;
+	margin: 0px 10px 0px  0px;
+}
+
+.copyright{
+	grid-area: copyright;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.copyright__texto{
+	font-size: 12px;
+	text-transform: capitalize;
+	margin-left: 60px;
+}
+
+.iconos__edicion{
+	margin: 50px 10px 0px 10px;
+}
+
+.icono__palabra{
+	margin-left: 30px;
+	padding: 0px 5px 0px 5px;
+	font-size: 16px;
+}
+
+/*INDEX*/
+
+.main__section1{
+	background-image:url("../assets/img/foco_idea.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	grid-area: main__section1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section1__h1{
+	color: beige;
+	font-size: 80px;
+	margin-right: 250px;
+	text-shadow: 1px 2px 1px 2px ghostwhite;
+}
+
+.section2__iconos{
+	display: grid;
+	grid-template-areas: 
+	"economico seguimiento flexibilidad adaptabilidad";
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: auto;
+	justify-items: center;
+}
+
+.icono__texto{
+	margin-left: 5px;
+}
+
+.section3__frase{
+	color: snow;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 50px;
+	text-shadow: 1px 2px 1px black;
+}
+
+/*ACERCA DE MÍ*/
+
+.edicionEncabezados{
+	padding: 0px 0px 10px 0px;
+	margin: 20px;
+	color: #2e2e1f;
+	font-family: "libre baskerville", serif;
+	text-align: left;
+}
+
+.main__imagen{
+	border-style: solid;
+	border-width: 5px;
+	border-color: lightslategray;
+	width: 510px;
+	height: 510px;
+}
+
+/*SERVICIOS*/
+
+.main__papa{
+	background-color:#FDFCE5;
+	display: grid;
+	grid-template-areas:
+	"main__titulo main__titulo"
+	"main__presencialindiv presencialindiv__img"
+	"presencialgrup__img main__presencialgrup"
+	"main__presencialdom presencialdom__img"
+	"onlineindiv__img main__onlineindiv"
+	"main__onlinegrup onlinegrup__img"
+	"main__metodos main__metodos"
+	"main__pagos main__pagos"
+	"main__frase main__frase";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(8, auto);
+}
+
+.main__presencialdom{
+	grid-area: main__presencialdom;
+	display: grid;
+	grid-template-areas: 
+	"presencialdom__encabezado"
+	"presencialdom__parrafo"
+	"presencialdom__iframes";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(3, auto);
+}
+
+.main__metodos{
+	grid-area: main__metodos;
+}
+
+.main__pagos{
+	grid-area: main__pagos;
+}
+
+.presencialdom__iframes{
+	grid-area: presencialdom__iframes;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.edicionImagenes{
+	width: 100%;
+	height: 300px;
+}
+
+.presencialdomImagen{
+	width: 100%;
+	height: 610px;
+}
+
+/*ASIGNATURAS*/
+
+.main__padre{
+	background-color: #FDFCE5;
+	display: grid;
+	grid-template-areas: 
+	"asignaturas__encabezado"
+	"main__oracion"
+	"matematica__encabezado"
+	"main__matematica"
+	"lengua__encabezado"
+	"main__lengua"
+	"naturales__encabezado"
+	"main__naturales"
+	"sociales__encabezado"
+	"main__sociales"
+	"informatica__encabezado"
+	"main__informatica";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(12, auto);
+}
+
+.main__matematica{
+	grid-area: main__matematica;
+	display: grid;
+	grid-template-areas:
+	"matematica__primaria matematica__secundaria matematica__preuniversitaria"
+	"analisis__matematico algebra none";
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: auto auto;
+	justify-items: center;
+}
+
+.main__lengua{
+	grid-area: main__lengua;
+	display: grid;
+	grid-template-areas: 
+	"lengua__primaria lengua__secundaria literatura__secundaria";
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: auto;
+	justify-items: center;
+}
+
+.main__naturales{
+	grid-area: main__naturales;
+	display: grid;
+	grid-template-areas: 
+	"naturales fisicoquimica biologia"
+	"quimica fisica none";
+	grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    justify-items: center;
+}
+
+.biologia{
+	grid-area: biologia;
+	margin-right: 26px;
+}
+
+.margenNat{
+	margin-right: 50px;
+}
+
+.imagenCsnaturales{
+	margin-right: 50px;
+}
+
+.imagenQuimica{
+	margin-right: 50px;
+}
+
+.main__sociales{
+	grid-area: main__sociales;
+	display: grid;
+	grid-template-areas: 
+	"sociales geografia historia" 
+	"proyectos none none";
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: auto;
+	justify-items: center;
+}
+
+.main__informatica{
+	grid-area: main__informatica;
+	display: grid;
+	grid-template-areas: 
+	"word excel power" 
+	"ingles none none";
+	grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+/*CONTACTO*/
+
+.formulario{
+	grid-area: formulario;
+	display: grid;
+	grid-template-areas: 
+	"nombre"
+	"apellido"
+	"correo"
+	"asunto"
+	"servicio"
+	"mensaje"
+	"terminos"
+	"botones";
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(8, auto);
+	justify-items: center;
+}
+
+.form__label{
+	font-weight: bold;
+}
+
+.label__areatexto{
+	margin: 10px;
+	border:  1px solid black;
+	border-radius: 20px;
+}
+}

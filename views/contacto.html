@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="shortcut icon" href="../assets/img/logo_filolearning.png">
+	<!-- Linkear fonts de Google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Libre+Baskerville&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<!-- Linkear archivo externo CSS -->
+	<link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+   <div class="contenedor__padre"> 	
+    <!-- Inicio encabezado -->
+    <header>
+	    <!-- Inicio nav -->
+	    <nav>
+	        <!-- Logo -->
+	        <div class="logo__filolearning">
+		        <a href="../index.html" class="logo__anchor">
+		  	      <img src="../assets/img/logo_filolearning.png" alt="logo" class="logo">
+		  	      <p class="tipografiaLogo">Filolearning</p>
+		        </a>
+	        </div>
+	        <!-- Cierre logo -->
+	    	<!-- Lista con viñetas -->
+	    	<ul class="header__nav">
+	    	  	<li class="nav__item"><a href="../index.html"class="nav__anchor">inicio</a></li>
+	    	  	<li class="nav__item"><a href="acerca_de_mi.html"class="nav__anchor">acerca de mí</a></li>
+	    	  	<li class="nav__item"><a href="servicios.html"class="nav__anchor">servicios</a></li>
+	    	  	<li class="nav__item"><a href="asignaturas.html"class="nav__anchor">asignaturas</a></li>
+	    	  	<li class="nav__item"><a href="#"class="nav__anchor">contacto</a></li>
+	    	</ul>
+	    	<!-- Fin lista -->
+	    </nav>
+	    <!-- Cierre nav -->
+    </header>
+	<!-- Fin encabezado -->
+	<!-- Inicio contenido -->
+    <main class="mainPapa">
+    	<div class="contacto__encabezadoo">
+     	    <h1 class="centrar">Contáctame</h1>
+     	</div>
+     	<div class="texto">    
+     	    <p class="mainTexto">Si deseas realizarme una consulta o solicitar un servicio, completa el siguiente formulario.</p>
+     	<div>    
+     	<!-- Formulario de contacto -->
+     	<form action="#" class="formulario">
+     	    <label for="nombre" class="form__label nombre">Nombre:
+     		  <input type="text" name="nombre" id="nombre" class="label__areatexto">
+     	    </label>
+     	    <label for="apellido" class="form__label apellido">Apellido:
+     		  <input type="text" name="apellido" id="apellido" class="label__areatexto">
+     	    </label>
+     	    <label for="email" class="form__label correo">Correo electrónico:
+     		  <input type="email" name="email" id="email" class="label__areatexto">
+     	    </label>
+     	    <label for="asunto" class="form__label asunto">Asunto:
+     	      <input type="text" name="asunto" id="asunto" class="label__areatexto">
+     	    </label>
+     	    <label for="servicios" class="form__label servicio">Servicio:
+     	      <select name="servicios" id="servicios" class="label__areatexto">
+     	    	<option value="presencial individual">presencial individual</option>
+     	    	<option value="presencial grupal">presencial grupal</option>
+     	    	<option value="online individual">online individual</option>
+     	    	<option value="online grupal">online grupal</option>
+     	    	<option value="presencial a domicilio">presencial a domicilio</option>
+     	       </select>
+     	    </label>
+     	    <label for="mensaje" class="form__label mensaje">Mensaje:
+     		   <textarea name="mensaje" id="mensaje" class="label__areatexto"></textarea>
+     	    </label>
+     	    <div class="terminos">Acepto términos y condiciones
+              <input type="checkbox" name="acepta" value="1">
+            </div>
+            <div class="botones">   
+     		  <input type="submit" value="Enviar" class="boton">
+     		  <input type="reset" name="restablecer" class="boton">
+     	    </div>
+     	</form>
+     	<!-- Fin formulario de contacto -->
+    </main>
+	<!-- Cierre contenido -->
+	<!-- Inicio footer -->
+    <footer>
+        <!-- Logo -->
+        <div class="logo__filolearning">
+    	  <a href="../index.html" class="logo__anchor">
+    	    <img src="../assets/img/logo_filolearning.png" alt="logo" class="logo">
+    	    <p class="tipografiaLogo">Filolearning</p>
+          </a>
+        </div>
+        <!-- Cierre logo -->
+        <!-- Contacto -->
+        <div class="contacto">
+     	  <h3 class="contacto__texto">Contacto</h3>
+     	  <a href="https://wa.me/+541122857995" target="_blank" class="contacto__whatsapp">
+    	    <img src="../assets/img/whatsapp-logo.png" alt="logo whatsapp" class="whatsappLogo">
+    	    <p class="whatsapp">WhatsApp</p>
+    	  </a>
+    	  <a href="mailto:ramirezsanabria.federico@gmail.com" target="_blank" class="contacto__mail">
+    	    <img src="../assets/img/envelope-logo.png" alt="logo email" class="mailLogo">
+    	    <p class="mailDireccion">ramirezsanabria.federico@gmail.com</p> 
+    	  </a> 
+        </div>
+        <!-- Fin contacto -->
+    	<!-- Redes sociales -->
+        <div class="redes">
+    	    <div>
+    	        <h3 class="redes__texto">O también podes comunicarte conmigo por:</h3>
+    	    </div>
+    	    <div>
+    	        <a href="https://www.facebook.com/federico.ramirez.7731" target="_blank">
+    	           <img src="../assets/img/facebook-logo.png" alt="logo face" class="redes__facebook">
+                </a>
+                <a href="https://www.instagram.com/fede.ramirez01/" target="_blank">
+    	           <img src="../assets/img/instagram-logo.png" alt="logo insta" class="redes__instagram">   
+    	        </a>
+    	        <a href="https://www.linkedin.com/in/federico-ramirez-sanabria/" target="_blank">
+                   <img src="../assets/img/linkedin-logo.png" alt="logo_linkedin" class="redes__linkedin">
+                </a>
+            </div> 
+        </div>
+        <!-- Fin redes sociales -->
+        <!-- Copyright -->
+        <div class="copyright">
+          <p class="copyright__texto">
+        	  © 2022 filolearning
+        	    all rights reserved
+          </p>
+        </div>
+        <!-- Fin copyright -->
+    </footer>
+	<!-- Cierre footer -->
+   </div>  	
+</body>
+</html>
