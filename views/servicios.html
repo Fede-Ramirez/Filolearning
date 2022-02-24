@@ -9,6 +9,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Libre+Baskerville&family=Roboto:wght@300&display=swap" rel="stylesheet">
+     <!-- Linkeo CSS animate -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<!-- Linkear archivo externo CSS -->
 	<link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -41,7 +43,7 @@
 	<!-- Fin encabezado -->
 	<!-- Inicio contenido -->
      <main class="main__papa">
-     	<div class="main__titulo">
+     	<div class="main__titulo animate__backInLeft">
      		<h1 class="centrar">Mis servicios</h1>
      	</div>
      	<!-- Servicios -->
@@ -93,7 +95,7 @@
           <div class="main__metodos">
         	         <h3 class="pagos__encabezado">Métodos de pago</h3>
         	</div>
-          <div class="main__pagos">	
+          <div class="main__pagos wow animate__animated animate__bounceInUp animate__delay-5s">	
         	     <div>
         	         <img src="../assets/img/efectivo.png" alt="efectivo" class="iconos__edicion">
         	         <h4 class="icono__palabra">Efectivo</h4>
@@ -108,7 +110,7 @@
         	     </div> 
           </div>
           <!-- Fin métodos de pago -->
-          <div class="main__frase">
+          <div class="main__frase wow animate__animated animate__bounceInLeft animate__delay-5s">
         	     <p class="edicionFrase">Si deseas conocer los precios, por favor accede a la sección <a href="contacto.html">contacto</a> y comunícate conmigo</p>
           </div>
      </main>
@@ -141,7 +143,7 @@
     	          <div>
     	              <h3 class="redes__texto">O también podes comunicarte conmigo por:</h3>
     	          </div>
-    	          <div>
+    	          <div class="redes__iconos">
     	             <a href="https://www.facebook.com/federico.ramirez.7731" target="_blank">
     	                <img src="../assets/img/facebook-logo.png" alt="logo face" class="redes__facebook">
                   </a>
@@ -165,5 +167,9 @@
      </footer>
      <!-- Cierre footer -->
     </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+          new WOW().init();
+    </script>
 </body>
 </html>

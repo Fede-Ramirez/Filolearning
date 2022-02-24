@@ -9,6 +9,8 @@
 	 <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Libre+Baskerville&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Linkeo CSS animate -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	 <!-- Linkear archivo externo CSS -->
    <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -51,7 +53,7 @@
       </p> 
       <h2 class="section2__pregunta">¿Por qué aprender en Filolearning?</h2>
       <!-- Colocar icionos -->
-      <div class="section2__iconos">
+      <div class="section2__iconos wow animate__animated animate__bounceInUp">
       	<div class="economico">
             <img src="assets/img/billetera.png" alt="imagen billetera" class="iconos__edicion">
        	    <h4 class="icono__palabra">Económico</h4>
@@ -109,7 +111,7 @@
     	    <div>
     	        <h3 class="redes__texto">O también podes comunicarte conmigo por:</h3>
     	    </div>
-    	    <div>
+    	    <div class="redes__iconos">
     	        <a href="https://www.facebook.com/federico.ramirez.7731" target="_blank">
     	          <img src="assets/img/facebook-logo.png" alt="logo face" class="redes__facebook">
               </a>
@@ -132,6 +134,10 @@
     <!-- Fin copyright -->
   </footer>
 	<!-- Cierre footer -->
- </div> 	
+ </div>
+ <script src="js/wow.min.js"></script>
+ <script>
+      new WOW().init();
+ </script> 	
 </body>
 </html>

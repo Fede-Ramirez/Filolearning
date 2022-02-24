@@ -9,6 +9,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Libre+Baskerville&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Linkeo CSS animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<!-- Linkear archivo externo CSS -->
 	<link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -49,7 +51,7 @@
         <!-- Fin imagen -->
         <!-- Apartados -->
         <div class="main__apartados1">
-            <h2 class="edicionEncabezados">¿Quién soy?</h2>
+            <h2 class="edicionEncabezados">¿Quién soy?</h2>  
             <p class="edicionParrafos">
         	  Me llamo Federico y soy estudiante de Ingeniería Química. Una de las razones que me llevaron a estudiar esta carrera es mi gusto hacia las ciencias exactas, en especial la matemática, una asignatura no muy querida por las personas. 
         	  Soy una persona que le encanta aprender cosas nuevas constantemente y de distintos ámbitos, ya sea cultural, tecnológico, social, ambiental, idiomas, entre otros.
@@ -73,7 +75,7 @@
         </div>
         <!-- Fin apartados -->
         <!-- Frase de cierre -->
-        <div class="main__frase">
+        <div class="main__frase wow animate__animated animate__bounceInLeft animate__delay-5s">
         	<h3 class="edicionFrase">¡Aprender requiere de constancia y dedicación, no dudes en contactarme e intentar!</h3>
         </div>
         <!-- Fin frase -->
@@ -107,7 +109,7 @@
         	<div>
     	         <h3 class="redes__texto">O también podes comunicarte conmigo por:</h3>
     	    </div>
-    	    <div>
+    	    <div class="redes__iconos">
     	        <a href="https://www.facebook.com/federico.ramirez.7731" target="_blank">
     	           <img src="../assets/img/facebook-logo.png" alt="logo face" class="redes__facebook">
                 </a>
@@ -130,6 +132,10 @@
         <!-- Fin copyright -->
     </footer>
 	<!-- Cierre footer -->
-   </div> 	
+   </div>
+   <script src="js/wow.min.js"></script>
+   <script>
+        new WOW().init();
+   </script> 	
 </body>
 </html>
